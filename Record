@@ -3,3 +3,9 @@ driftnet -i wlan0 + ettercap
 
 http://userscripts-mirror.org/scripts/show/119798
 
+
+Linux specific: Alternately, put the library in /lib, /usr/lib, 
+or some other path referenced in your /etc/ld.so.conf or its imported 
+config fragments, and then all you need to do is run /sbin/ldconfig to 
+refresh ld.so (the dynamic linker)'s cache of libraries.
+
