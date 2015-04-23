@@ -9,3 +9,8 @@ or some other path referenced in your /etc/ld.so.conf or its imported
 config fragments, and then all you need to do is run /sbin/ldconfig to 
 refresh ld.so (the dynamic linker)'s cache of libraries.
 
+
+1、程序运行参数。 
+set args 可指定运行时参数。（如：set args 10 20 30 40 50） 
+show args 命令可以查看设置好的运行参数。 
+
