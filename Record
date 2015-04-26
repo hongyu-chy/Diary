@@ -14,3 +14,7 @@ refresh ld.so (the dynamic linker)'s cache of libraries.
 set args 可指定运行时参数。（如：set args 10 20 30 40 50） 
 show args 命令可以查看设置好的运行参数。 
 
+vim /etc/ld.so.conf
+ldconfig 使其生效
+抓syn包1
+tcpdump -i eth1 'tcp[tcpflags] = tcp-syn' -n
