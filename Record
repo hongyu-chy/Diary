@@ -18,3 +18,11 @@ vim /etc/ld.so.conf
 ldconfig 使其生效
 抓syn包1
 tcpdump -i eth1 'tcp[tcpflags] = tcp-syn' -n
+
+ toilet -f mono12 -F metal Miss you much
+
+
+
+ 2，然后登录，在sudo -i，输入密码，切换到root用户下，然后：reboot，重新启动电脑。这种方法会等待很长时间。下面来第二种方法：
+ 还是进入终端2，然后可以运行：ps -t tty7来查看在终端7中运行的是什么进程。查看后我们会发现一个叫Xorg的进程，记下它的PID，然后切换到root，执行：kill 9 PID，关闭这个进程，ubuntu就会自动重新启动Xorg，然后进入到登录界面。
+ 这种方法也有问题，由于ubuntu只是重新启动了Xorg，所以开始运行的程序和数据就会丢失。
