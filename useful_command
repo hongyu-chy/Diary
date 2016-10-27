@@ -1,0 +1,1 @@
+sudo ipmitool sdr  查看CPU 温度
